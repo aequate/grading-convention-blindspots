@@ -1,0 +1,2295 @@
+{
+  "study": "grading_followup_v2",
+  "model": {
+    "id": "Qwen/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "compute_precision": "float16",
+    "model_class": "Qwen3_5ForConditionalGeneration",
+    "processor_class": "Qwen3VLProcessor",
+    "tokenizer_class": "Qwen3_5Tokenizer",
+    "quantization": {
+      "_load_in_4bit": true,
+      "_load_in_8bit": false,
+      "bnb_4bit_compute_dtype": "float16",
+      "bnb_4bit_quant_storage": "uint8",
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "llm_int8_enable_fp32_cpu_offload": false,
+      "llm_int8_has_fp16_weight": false,
+      "llm_int8_skip_modules": [
+        "lm_head",
+        "model.visual"
+      ],
+      "llm_int8_threshold": 6.0,
+      "load_in_4bit": true,
+      "load_in_8bit": false,
+      "quant_method": "bitsandbytes"
+    },
+    "attention_implementation": "sdpa",
+    "hub_kernels_enabled": false,
+    "decode_settings": {
+      "clean_up_tokenization_spaces": false,
+      "skip_special_tokens": false
+    }
+  },
+  "blocks": {
+    "greedy": {
+      "deterministic_algorithms": true,
+      "do_sample": false,
+      "enable_thinking": false,
+      "max_input_tokens": 4096,
+      "max_new_tokens": 512,
+      "model_id": "Qwen/Qwen3.5-4B",
+      "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "num_beams": 1,
+      "precision": "auto",
+      "quantization": "nf4",
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "temperature": null,
+      "top_k": null,
+      "top_p": null
+    },
+    "sample_42": {
+      "deterministic_algorithms": true,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_input_tokens": 4096,
+      "max_new_tokens": 512,
+      "model_id": "Qwen/Qwen3.5-4B",
+      "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "num_beams": 1,
+      "precision": "auto",
+      "quantization": "nf4",
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 0.9
+    },
+    "sample_43": {
+      "deterministic_algorithms": true,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_input_tokens": 4096,
+      "max_new_tokens": 512,
+      "model_id": "Qwen/Qwen3.5-4B",
+      "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "num_beams": 1,
+      "precision": "auto",
+      "quantization": "nf4",
+      "repetition_penalty": 1.0,
+      "seed": 43,
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 0.9
+    },
+    "sample_44": {
+      "deterministic_algorithms": true,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_input_tokens": 4096,
+      "max_new_tokens": 512,
+      "model_id": "Qwen/Qwen3.5-4B",
+      "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "num_beams": 1,
+      "precision": "auto",
+      "quantization": "nf4",
+      "repetition_penalty": 1.0,
+      "seed": 44,
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 0.9
+    },
+    "sample_45": {
+      "deterministic_algorithms": true,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_input_tokens": 4096,
+      "max_new_tokens": 512,
+      "model_id": "Qwen/Qwen3.5-4B",
+      "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "num_beams": 1,
+      "precision": "auto",
+      "quantization": "nf4",
+      "repetition_penalty": 1.0,
+      "seed": 45,
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 0.9
+    },
+    "sample_46": {
+      "deterministic_algorithms": true,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_input_tokens": 4096,
+      "max_new_tokens": 512,
+      "model_id": "Qwen/Qwen3.5-4B",
+      "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "num_beams": 1,
+      "precision": "auto",
+      "quantization": "nf4",
+      "repetition_penalty": 1.0,
+      "seed": 46,
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 0.9
+    }
+  },
+  "effective_generation": {
+    "greedy": {
+      "do_sample": false,
+      "eos_token_id": 248044,
+      "max_new_tokens": 512,
+      "num_beams": 1,
+      "num_return_sequences": 1,
+      "output_scores": false,
+      "pad_token_id": 248044,
+      "repetition_penalty": 1.0,
+      "return_dict_in_generate": true,
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0,
+      "transformers_version": "5.19.0",
+      "use_cache": true
+    },
+    "sampled": {
+      "do_sample": true,
+      "eos_token_id": 248044,
+      "max_new_tokens": 512,
+      "num_beams": 1,
+      "num_return_sequences": 1,
+      "output_scores": false,
+      "pad_token_id": 248044,
+      "repetition_penalty": 1.0,
+      "return_dict_in_generate": true,
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 0.9,
+      "transformers_version": "5.19.0",
+      "use_cache": true
+    }
+  },
+  "schedules": {
+    "greedy": [
+      {
+        "case_id": "fu_005_N_GUC",
+        "case_seed": 562430846,
+        "position": 1,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_R_HIGH",
+        "case_seed": 3037237842,
+        "position": 2,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N0",
+        "case_seed": 4037339804,
+        "position": 3,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_CAIRO",
+        "case_seed": 1375161839,
+        "position": 4,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_AR",
+        "case_seed": 1418212846,
+        "position": 5,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N0",
+        "case_seed": 3341116683,
+        "position": 6,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_R_HIGH",
+        "case_seed": 3236949411,
+        "position": 7,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_CAIRO",
+        "case_seed": 1048414693,
+        "position": 8,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_GUC",
+        "case_seed": 4280924739,
+        "position": 9,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N_AR",
+        "case_seed": 3995651005,
+        "position": 10,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_AR",
+        "case_seed": 2665039140,
+        "position": 11,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_R_HIGH",
+        "case_seed": 3950486409,
+        "position": 12,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_GUC",
+        "case_seed": 389739297,
+        "position": 13,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N0",
+        "case_seed": 3264585975,
+        "position": 14,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_R_HIGH",
+        "case_seed": 3819754073,
+        "position": 15,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_FULL",
+        "case_seed": 567825408,
+        "position": 16,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_control_high",
+        "case_seed": 1335061339,
+        "position": 17,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_FULL",
+        "case_seed": 3640026648,
+        "position": 18,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_GUC",
+        "case_seed": 907400288,
+        "position": 19,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_control_low",
+        "case_seed": 3653530091,
+        "position": 20,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N0",
+        "case_seed": 4032465889,
+        "position": 21,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_R_LOW",
+        "case_seed": 2512161856,
+        "position": 22,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_CAIRO",
+        "case_seed": 536585890,
+        "position": 23,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_GUC",
+        "case_seed": 2553400914,
+        "position": 24,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N0",
+        "case_seed": 1028282378,
+        "position": 25,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_FULL",
+        "case_seed": 4212121502,
+        "position": 26,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_CAIRO",
+        "case_seed": 195413716,
+        "position": 27,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_AR",
+        "case_seed": 3468294781,
+        "position": 28,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_AR",
+        "case_seed": 3874051068,
+        "position": 29,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_R_LOW",
+        "case_seed": 1103784938,
+        "position": 30,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_FULL",
+        "case_seed": 3731617500,
+        "position": 31,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_FULL",
+        "case_seed": 1826663282,
+        "position": 32,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_AR",
+        "case_seed": 2800406433,
+        "position": 33,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_R_LOW",
+        "case_seed": 1437155274,
+        "position": 34,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_AR",
+        "case_seed": 3002947406,
+        "position": 35,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_FULL",
+        "case_seed": 565634868,
+        "position": 36,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_FULL",
+        "case_seed": 1245530360,
+        "position": 37,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N_FULL",
+        "case_seed": 3260355563,
+        "position": 38,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_R_HIGH",
+        "case_seed": 359973300,
+        "position": 39,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_GUC",
+        "case_seed": 2158473956,
+        "position": 40,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_R_HIGH",
+        "case_seed": 2333403258,
+        "position": 41,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_GUC",
+        "case_seed": 262194407,
+        "position": 42,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_R_LOW",
+        "case_seed": 2695913072,
+        "position": 43,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_R_HIGH",
+        "case_seed": 2960166613,
+        "position": 44,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N0",
+        "case_seed": 1311105703,
+        "position": 45,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_CAIRO",
+        "case_seed": 2151731635,
+        "position": 46,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N0",
+        "case_seed": 2642327788,
+        "position": 47,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_R_HIGH",
+        "case_seed": 4143362676,
+        "position": 48,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_CAIRO",
+        "case_seed": 3715505149,
+        "position": 49,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_R_LOW",
+        "case_seed": 2447825742,
+        "position": 50,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_GUC",
+        "case_seed": 3481178187,
+        "position": 51,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N0",
+        "case_seed": 153150497,
+        "position": 52,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N_CAIRO",
+        "case_seed": 2536056223,
+        "position": 53,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_CAIRO",
+        "case_seed": 4150742885,
+        "position": 54,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_R_LOW",
+        "case_seed": 342696969,
+        "position": 55,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_R_LOW",
+        "case_seed": 1902528130,
+        "position": 56,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_R_LOW",
+        "case_seed": 771228140,
+        "position": 57,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_AR",
+        "case_seed": 1104573659,
+        "position": 58,
+        "seed_block": 42
+      }
+    ],
+    "sample_42": [
+      {
+        "case_id": "fu_004_R_HIGH",
+        "case_seed": 4143362676,
+        "position": 1,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_FULL",
+        "case_seed": 567825408,
+        "position": 2,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_R_LOW",
+        "case_seed": 1437155274,
+        "position": 3,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_R_LOW",
+        "case_seed": 342696969,
+        "position": 4,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_AR",
+        "case_seed": 3002947406,
+        "position": 5,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N_FULL",
+        "case_seed": 3260355563,
+        "position": 6,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_FULL",
+        "case_seed": 565634868,
+        "position": 7,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_FULL",
+        "case_seed": 1826663282,
+        "position": 8,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_FULL",
+        "case_seed": 3640026648,
+        "position": 9,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_AR",
+        "case_seed": 1104573659,
+        "position": 10,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_CAIRO",
+        "case_seed": 1375161839,
+        "position": 11,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_R_LOW",
+        "case_seed": 2447825742,
+        "position": 12,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_AR",
+        "case_seed": 3874051068,
+        "position": 13,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_GUC",
+        "case_seed": 2553400914,
+        "position": 14,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_AR",
+        "case_seed": 2800406433,
+        "position": 15,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N_GUC",
+        "case_seed": 562430846,
+        "position": 16,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N0",
+        "case_seed": 2642327788,
+        "position": 17,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_CAIRO",
+        "case_seed": 4150742885,
+        "position": 18,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N0",
+        "case_seed": 1311105703,
+        "position": 19,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_GUC",
+        "case_seed": 2158473956,
+        "position": 20,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_GUC",
+        "case_seed": 4280924739,
+        "position": 21,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_R_HIGH",
+        "case_seed": 359973300,
+        "position": 22,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N_AR",
+        "case_seed": 3995651005,
+        "position": 23,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N0",
+        "case_seed": 4032465889,
+        "position": 24,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_AR",
+        "case_seed": 3468294781,
+        "position": 25,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_GUC",
+        "case_seed": 3481178187,
+        "position": 26,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_R_LOW",
+        "case_seed": 2512161856,
+        "position": 27,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N_FULL",
+        "case_seed": 1245530360,
+        "position": 28,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_FULL",
+        "case_seed": 4212121502,
+        "position": 29,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N0",
+        "case_seed": 4037339804,
+        "position": 30,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_AR",
+        "case_seed": 1418212846,
+        "position": 31,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_N_CAIRO",
+        "case_seed": 2536056223,
+        "position": 32,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_R_LOW",
+        "case_seed": 1103784938,
+        "position": 33,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_N0",
+        "case_seed": 1028282378,
+        "position": 34,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_R_HIGH",
+        "case_seed": 2960166613,
+        "position": 35,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_007_R_LOW",
+        "case_seed": 771228140,
+        "position": 36,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_FULL",
+        "case_seed": 3731617500,
+        "position": 37,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_005_R_HIGH",
+        "case_seed": 3037237842,
+        "position": 38,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N0",
+        "case_seed": 3264585975,
+        "position": 39,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_CAIRO",
+        "case_seed": 195413716,
+        "position": 40,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_control_low",
+        "case_seed": 3653530091,
+        "position": 41,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_N_GUC",
+        "case_seed": 262194407,
+        "position": 42,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_GUC",
+        "case_seed": 907400288,
+        "position": 43,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N_CAIRO",
+        "case_seed": 3715505149,
+        "position": 44,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_AR",
+        "case_seed": 2665039140,
+        "position": 45,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_001_N0",
+        "case_seed": 3341116683,
+        "position": 46,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_R_HIGH",
+        "case_seed": 3950486409,
+        "position": 47,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_N_GUC",
+        "case_seed": 389739297,
+        "position": 48,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_control_high",
+        "case_seed": 1335061339,
+        "position": 49,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_004_N_CAIRO",
+        "case_seed": 2151731635,
+        "position": 50,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_R_LOW",
+        "case_seed": 1902528130,
+        "position": 51,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N0",
+        "case_seed": 153150497,
+        "position": 52,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_R_HIGH",
+        "case_seed": 2333403258,
+        "position": 53,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_N_CAIRO",
+        "case_seed": 1048414693,
+        "position": 54,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_002_R_HIGH",
+        "case_seed": 3236949411,
+        "position": 55,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_006_R_LOW",
+        "case_seed": 2695913072,
+        "position": 56,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_003_R_HIGH",
+        "case_seed": 3819754073,
+        "position": 57,
+        "seed_block": 42
+      },
+      {
+        "case_id": "fu_008_N_CAIRO",
+        "case_seed": 536585890,
+        "position": 58,
+        "seed_block": 42
+      }
+    ],
+    "sample_43": [
+      {
+        "case_id": "fu_007_R_LOW",
+        "case_seed": 2027256781,
+        "position": 1,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_002_R_HIGH",
+        "case_seed": 1966619711,
+        "position": 2,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_005_R_LOW",
+        "case_seed": 83030126,
+        "position": 3,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_004_R_HIGH",
+        "case_seed": 1112447323,
+        "position": 4,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_007_N_GUC",
+        "case_seed": 1785876122,
+        "position": 5,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_008_N_AR",
+        "case_seed": 3805090834,
+        "position": 6,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_006_N_CAIRO",
+        "case_seed": 3289768866,
+        "position": 7,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_control_low",
+        "case_seed": 1283882977,
+        "position": 8,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_001_N_FULL",
+        "case_seed": 297947866,
+        "position": 9,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_007_N_CAIRO",
+        "case_seed": 2714355414,
+        "position": 10,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_008_R_LOW",
+        "case_seed": 2180348688,
+        "position": 11,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_004_R_LOW",
+        "case_seed": 2976748907,
+        "position": 12,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_003_R_HIGH",
+        "case_seed": 655712718,
+        "position": 13,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_control_high",
+        "case_seed": 1731917297,
+        "position": 14,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_007_N_AR",
+        "case_seed": 121947215,
+        "position": 15,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_002_R_LOW",
+        "case_seed": 1982042843,
+        "position": 16,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_006_R_LOW",
+        "case_seed": 1764340477,
+        "position": 17,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_004_N_AR",
+        "case_seed": 2075585900,
+        "position": 18,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_001_N_CAIRO",
+        "case_seed": 3110005180,
+        "position": 19,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_002_N_AR",
+        "case_seed": 3989128375,
+        "position": 20,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_004_N_FULL",
+        "case_seed": 2505838160,
+        "position": 21,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_003_N_GUC",
+        "case_seed": 870226018,
+        "position": 22,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_008_N_CAIRO",
+        "case_seed": 4228608222,
+        "position": 23,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_006_N_FULL",
+        "case_seed": 578427949,
+        "position": 24,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_002_N_FULL",
+        "case_seed": 2420479854,
+        "position": 25,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_001_N_AR",
+        "case_seed": 234747210,
+        "position": 26,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_007_N0",
+        "case_seed": 4084147283,
+        "position": 27,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_005_N_FULL",
+        "case_seed": 1266045786,
+        "position": 28,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_004_N0",
+        "case_seed": 1875222236,
+        "position": 29,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_003_R_LOW",
+        "case_seed": 2503645944,
+        "position": 30,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_001_R_LOW",
+        "case_seed": 2126860205,
+        "position": 31,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_008_N_GUC",
+        "case_seed": 3070128702,
+        "position": 32,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_008_N_FULL",
+        "case_seed": 1167549037,
+        "position": 33,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_003_N_AR",
+        "case_seed": 3748762373,
+        "position": 34,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_005_N_CAIRO",
+        "case_seed": 3794891347,
+        "position": 35,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_001_N_GUC",
+        "case_seed": 3298411997,
+        "position": 36,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_008_N0",
+        "case_seed": 711035440,
+        "position": 37,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_006_N_GUC",
+        "case_seed": 3332999325,
+        "position": 38,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_004_N_GUC",
+        "case_seed": 1631921938,
+        "position": 39,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_001_R_HIGH",
+        "case_seed": 108098177,
+        "position": 40,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_005_N0",
+        "case_seed": 2392186310,
+        "position": 41,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_005_N_AR",
+        "case_seed": 3661355053,
+        "position": 42,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_003_N0",
+        "case_seed": 3185284122,
+        "position": 43,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_005_R_HIGH",
+        "case_seed": 3758603550,
+        "position": 44,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_006_R_HIGH",
+        "case_seed": 3046219148,
+        "position": 45,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_001_N0",
+        "case_seed": 2913341661,
+        "position": 46,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_008_R_HIGH",
+        "case_seed": 3490096786,
+        "position": 47,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_006_N0",
+        "case_seed": 1280973958,
+        "position": 48,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_003_N_FULL",
+        "case_seed": 776625056,
+        "position": 49,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_006_N_AR",
+        "case_seed": 819441317,
+        "position": 50,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_007_R_HIGH",
+        "case_seed": 1316938735,
+        "position": 51,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_005_N_GUC",
+        "case_seed": 1986006710,
+        "position": 52,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_002_N_CAIRO",
+        "case_seed": 1674797542,
+        "position": 53,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_007_N_FULL",
+        "case_seed": 3306560694,
+        "position": 54,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_003_N_CAIRO",
+        "case_seed": 3900799023,
+        "position": 55,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_002_N_GUC",
+        "case_seed": 3612569866,
+        "position": 56,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_004_N_CAIRO",
+        "case_seed": 2842124690,
+        "position": 57,
+        "seed_block": 43
+      },
+      {
+        "case_id": "fu_002_N0",
+        "case_seed": 1256760445,
+        "position": 58,
+        "seed_block": 43
+      }
+    ],
+    "sample_44": [
+      {
+        "case_id": "fu_003_N0",
+        "case_seed": 2037078843,
+        "position": 1,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_002_N0",
+        "case_seed": 2138845940,
+        "position": 2,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_001_R_LOW",
+        "case_seed": 1337541328,
+        "position": 3,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_008_N0",
+        "case_seed": 1808037460,
+        "position": 4,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_001_N_AR",
+        "case_seed": 1912124135,
+        "position": 5,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_001_N_GUC",
+        "case_seed": 1440032567,
+        "position": 6,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_005_R_LOW",
+        "case_seed": 3699989363,
+        "position": 7,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_008_N_AR",
+        "case_seed": 1934905646,
+        "position": 8,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_008_N_FULL",
+        "case_seed": 1937751453,
+        "position": 9,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_003_N_CAIRO",
+        "case_seed": 2992711557,
+        "position": 10,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_007_N_FULL",
+        "case_seed": 3111696948,
+        "position": 11,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_006_N0",
+        "case_seed": 2466896475,
+        "position": 12,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_008_N_CAIRO",
+        "case_seed": 3283212564,
+        "position": 13,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_007_R_LOW",
+        "case_seed": 2504962504,
+        "position": 14,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_004_N_FULL",
+        "case_seed": 2289085940,
+        "position": 15,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_001_N0",
+        "case_seed": 1872626496,
+        "position": 16,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_002_R_HIGH",
+        "case_seed": 2733020192,
+        "position": 17,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_004_N_GUC",
+        "case_seed": 426922478,
+        "position": 18,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_006_N_FULL",
+        "case_seed": 2504313604,
+        "position": 19,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_003_N_GUC",
+        "case_seed": 592024329,
+        "position": 20,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_control_high",
+        "case_seed": 2601418595,
+        "position": 21,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_001_N_FULL",
+        "case_seed": 537400710,
+        "position": 22,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_002_N_AR",
+        "case_seed": 3666677738,
+        "position": 23,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_007_N_CAIRO",
+        "case_seed": 4162518997,
+        "position": 24,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_006_N_AR",
+        "case_seed": 3055566507,
+        "position": 25,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_008_R_LOW",
+        "case_seed": 3264665590,
+        "position": 26,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_005_N_CAIRO",
+        "case_seed": 239394100,
+        "position": 27,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_005_N0",
+        "case_seed": 3571747718,
+        "position": 28,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_005_N_GUC",
+        "case_seed": 8659455,
+        "position": 29,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_004_R_LOW",
+        "case_seed": 904466747,
+        "position": 30,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_008_N_GUC",
+        "case_seed": 2695323575,
+        "position": 31,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_004_N_CAIRO",
+        "case_seed": 1153000221,
+        "position": 32,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_007_N0",
+        "case_seed": 3812710719,
+        "position": 33,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_007_N_GUC",
+        "case_seed": 2763968713,
+        "position": 34,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_004_N_AR",
+        "case_seed": 4166325160,
+        "position": 35,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_002_N_FULL",
+        "case_seed": 2783734664,
+        "position": 36,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_006_N_CAIRO",
+        "case_seed": 1148881637,
+        "position": 37,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_003_R_LOW",
+        "case_seed": 2125699639,
+        "position": 38,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_001_N_CAIRO",
+        "case_seed": 15503087,
+        "position": 39,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_002_R_LOW",
+        "case_seed": 1342112457,
+        "position": 40,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_002_N_CAIRO",
+        "case_seed": 1855888941,
+        "position": 41,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_003_N_FULL",
+        "case_seed": 2266498739,
+        "position": 42,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_006_N_GUC",
+        "case_seed": 1462448034,
+        "position": 43,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_003_N_AR",
+        "case_seed": 983420009,
+        "position": 44,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_008_R_HIGH",
+        "case_seed": 4146807245,
+        "position": 45,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_007_R_HIGH",
+        "case_seed": 229880314,
+        "position": 46,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_007_N_AR",
+        "case_seed": 1633036669,
+        "position": 47,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_005_N_AR",
+        "case_seed": 3447057425,
+        "position": 48,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_005_R_HIGH",
+        "case_seed": 3059272816,
+        "position": 49,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_control_low",
+        "case_seed": 253084504,
+        "position": 50,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_003_R_HIGH",
+        "case_seed": 2825500941,
+        "position": 51,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_001_R_HIGH",
+        "case_seed": 2035659505,
+        "position": 52,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_004_N0",
+        "case_seed": 1999640702,
+        "position": 53,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_006_R_LOW",
+        "case_seed": 2200555180,
+        "position": 54,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_002_N_GUC",
+        "case_seed": 1303526323,
+        "position": 55,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_005_N_FULL",
+        "case_seed": 1878105549,
+        "position": 56,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_006_R_HIGH",
+        "case_seed": 2404889122,
+        "position": 57,
+        "seed_block": 44
+      },
+      {
+        "case_id": "fu_004_R_HIGH",
+        "case_seed": 3959107616,
+        "position": 58,
+        "seed_block": 44
+      }
+    ],
+    "sample_45": [
+      {
+        "case_id": "fu_006_R_LOW",
+        "case_seed": 3025590596,
+        "position": 1,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_008_R_HIGH",
+        "case_seed": 1834996237,
+        "position": 2,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_008_N_AR",
+        "case_seed": 4153360195,
+        "position": 3,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_001_N_AR",
+        "case_seed": 1713847660,
+        "position": 4,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_002_R_HIGH",
+        "case_seed": 111414392,
+        "position": 5,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_002_N0",
+        "case_seed": 3776970863,
+        "position": 6,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_002_N_GUC",
+        "case_seed": 3965017019,
+        "position": 7,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_005_N_FULL",
+        "case_seed": 500168409,
+        "position": 8,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_002_N_FULL",
+        "case_seed": 1930573002,
+        "position": 9,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_005_R_HIGH",
+        "case_seed": 1710949123,
+        "position": 10,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_control_high",
+        "case_seed": 1820550292,
+        "position": 11,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_008_N0",
+        "case_seed": 2552726550,
+        "position": 12,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_003_R_HIGH",
+        "case_seed": 1092664461,
+        "position": 13,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_002_R_LOW",
+        "case_seed": 2922888502,
+        "position": 14,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_007_R_LOW",
+        "case_seed": 391201287,
+        "position": 15,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_008_R_LOW",
+        "case_seed": 712144515,
+        "position": 16,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_004_N_AR",
+        "case_seed": 3242361712,
+        "position": 17,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_control_low",
+        "case_seed": 945345022,
+        "position": 18,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_006_R_HIGH",
+        "case_seed": 2057491012,
+        "position": 19,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_006_N_GUC",
+        "case_seed": 529260817,
+        "position": 20,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_004_R_LOW",
+        "case_seed": 2506827637,
+        "position": 21,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_001_N0",
+        "case_seed": 3760579238,
+        "position": 22,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_006_N_FULL",
+        "case_seed": 1160722092,
+        "position": 23,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_004_N_FULL",
+        "case_seed": 2281931731,
+        "position": 24,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_004_N_CAIRO",
+        "case_seed": 2749934200,
+        "position": 25,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_001_N_FULL",
+        "case_seed": 1013985797,
+        "position": 26,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_002_N_AR",
+        "case_seed": 434217493,
+        "position": 27,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_007_N_FULL",
+        "case_seed": 3963445379,
+        "position": 28,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_001_N_CAIRO",
+        "case_seed": 4256713063,
+        "position": 29,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_004_R_HIGH",
+        "case_seed": 3451480978,
+        "position": 30,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_007_N_CAIRO",
+        "case_seed": 2996564931,
+        "position": 31,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_007_R_HIGH",
+        "case_seed": 2725074453,
+        "position": 32,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_003_N_AR",
+        "case_seed": 4195749684,
+        "position": 33,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_006_N0",
+        "case_seed": 3708723290,
+        "position": 34,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_005_N0",
+        "case_seed": 3887098088,
+        "position": 35,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_001_R_HIGH",
+        "case_seed": 4165167501,
+        "position": 36,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_003_N_CAIRO",
+        "case_seed": 2978918940,
+        "position": 37,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_006_N_CAIRO",
+        "case_seed": 3361920055,
+        "position": 38,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_001_R_LOW",
+        "case_seed": 2990961786,
+        "position": 39,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_002_N_CAIRO",
+        "case_seed": 1184550631,
+        "position": 40,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_006_N_AR",
+        "case_seed": 1206814228,
+        "position": 41,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_005_N_GUC",
+        "case_seed": 1129871549,
+        "position": 42,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_007_N_AR",
+        "case_seed": 3688853295,
+        "position": 43,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_004_N_GUC",
+        "case_seed": 2228459893,
+        "position": 44,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_005_N_CAIRO",
+        "case_seed": 1141019617,
+        "position": 45,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_003_N_GUC",
+        "case_seed": 1802793796,
+        "position": 46,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_003_N0",
+        "case_seed": 912130620,
+        "position": 47,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_007_N0",
+        "case_seed": 1161068194,
+        "position": 48,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_003_R_LOW",
+        "case_seed": 1572532672,
+        "position": 49,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_005_N_AR",
+        "case_seed": 3523679396,
+        "position": 50,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_001_N_GUC",
+        "case_seed": 936907707,
+        "position": 51,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_003_N_FULL",
+        "case_seed": 3281686636,
+        "position": 52,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_005_R_LOW",
+        "case_seed": 1116592216,
+        "position": 53,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_008_N_GUC",
+        "case_seed": 72624990,
+        "position": 54,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_004_N0",
+        "case_seed": 3744096680,
+        "position": 55,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_008_N_FULL",
+        "case_seed": 3675250669,
+        "position": 56,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_008_N_CAIRO",
+        "case_seed": 150774936,
+        "position": 57,
+        "seed_block": 45
+      },
+      {
+        "case_id": "fu_007_N_GUC",
+        "case_seed": 3730387895,
+        "position": 58,
+        "seed_block": 45
+      }
+    ],
+    "sample_46": [
+      {
+        "case_id": "fu_003_R_LOW",
+        "case_seed": 3379600649,
+        "position": 1,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_004_N0",
+        "case_seed": 3920762235,
+        "position": 2,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_008_R_LOW",
+        "case_seed": 4007295507,
+        "position": 3,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_003_N0",
+        "case_seed": 2542168450,
+        "position": 4,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_006_N_AR",
+        "case_seed": 2469169389,
+        "position": 5,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_005_N_GUC",
+        "case_seed": 2647538070,
+        "position": 6,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_007_N_CAIRO",
+        "case_seed": 3573492388,
+        "position": 7,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_004_R_HIGH",
+        "case_seed": 4016823885,
+        "position": 8,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_007_R_LOW",
+        "case_seed": 821172776,
+        "position": 9,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_001_R_LOW",
+        "case_seed": 2363724538,
+        "position": 10,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_005_R_HIGH",
+        "case_seed": 2466574918,
+        "position": 11,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_002_N_CAIRO",
+        "case_seed": 3155992068,
+        "position": 12,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_005_N0",
+        "case_seed": 2338628152,
+        "position": 13,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_001_N_CAIRO",
+        "case_seed": 3425053436,
+        "position": 14,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_008_N_AR",
+        "case_seed": 1690204543,
+        "position": 15,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_003_N_CAIRO",
+        "case_seed": 448520097,
+        "position": 16,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_007_N_GUC",
+        "case_seed": 3292192030,
+        "position": 17,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_008_R_HIGH",
+        "case_seed": 3741900495,
+        "position": 18,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_006_N_CAIRO",
+        "case_seed": 3297451040,
+        "position": 19,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_008_N0",
+        "case_seed": 4197340390,
+        "position": 20,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_002_N_AR",
+        "case_seed": 1150484107,
+        "position": 21,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_005_N_FULL",
+        "case_seed": 3539496026,
+        "position": 22,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_001_N_FULL",
+        "case_seed": 1393694409,
+        "position": 23,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_004_R_LOW",
+        "case_seed": 3095703069,
+        "position": 24,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_008_N_GUC",
+        "case_seed": 3188637903,
+        "position": 25,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_007_N_FULL",
+        "case_seed": 3877657890,
+        "position": 26,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_006_R_HIGH",
+        "case_seed": 245598567,
+        "position": 27,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_003_N_FULL",
+        "case_seed": 323865191,
+        "position": 28,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_005_R_LOW",
+        "case_seed": 2610956593,
+        "position": 29,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_001_R_HIGH",
+        "case_seed": 1482829270,
+        "position": 30,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_008_N_CAIRO",
+        "case_seed": 2102276464,
+        "position": 31,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_006_N_GUC",
+        "case_seed": 1355394264,
+        "position": 32,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_004_N_CAIRO",
+        "case_seed": 678863525,
+        "position": 33,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_003_R_HIGH",
+        "case_seed": 1890413094,
+        "position": 34,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_002_N_FULL",
+        "case_seed": 43760086,
+        "position": 35,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_006_R_LOW",
+        "case_seed": 1588149728,
+        "position": 36,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_001_N_GUC",
+        "case_seed": 326914838,
+        "position": 37,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_007_R_HIGH",
+        "case_seed": 178584402,
+        "position": 38,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_007_N0",
+        "case_seed": 4106001489,
+        "position": 39,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_004_N_FULL",
+        "case_seed": 52315068,
+        "position": 40,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_004_N_AR",
+        "case_seed": 3511272833,
+        "position": 41,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_004_N_GUC",
+        "case_seed": 2869247729,
+        "position": 42,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_007_N_AR",
+        "case_seed": 1554408443,
+        "position": 43,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_003_N_AR",
+        "case_seed": 4051584879,
+        "position": 44,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_008_N_FULL",
+        "case_seed": 3879602296,
+        "position": 45,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_002_R_LOW",
+        "case_seed": 740596513,
+        "position": 46,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_006_N0",
+        "case_seed": 3982060181,
+        "position": 47,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_control_high",
+        "case_seed": 102247159,
+        "position": 48,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_005_N_CAIRO",
+        "case_seed": 2323760533,
+        "position": 49,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_003_N_GUC",
+        "case_seed": 1727935375,
+        "position": 50,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_001_N_AR",
+        "case_seed": 761419694,
+        "position": 51,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_002_N_GUC",
+        "case_seed": 2245868463,
+        "position": 52,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_002_N0",
+        "case_seed": 3359462837,
+        "position": 53,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_006_N_FULL",
+        "case_seed": 1505847485,
+        "position": 54,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_002_R_HIGH",
+        "case_seed": 3261572815,
+        "position": 55,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_001_N0",
+        "case_seed": 3077198191,
+        "position": 56,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_control_low",
+        "case_seed": 4159132589,
+        "position": 57,
+        "seed_block": 46
+      },
+      {
+        "case_id": "fu_005_N_AR",
+        "case_seed": 1711660295,
+        "position": 58,
+        "seed_block": 46
+      }
+    ]
+  },
+  "scheduling_seed": 20261010,
+  "case_seed_policy": "sha256 canonical JSON {seed: seed_block, case_id: case_id}, first 8 hex digits",
+  "environment": {
+    "python": "3.13.15",
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "dependency_versions": {
+      "torch": "2.11.0+cu130",
+      "torchvision": "0.26.0+cu130",
+      "transformers": "5.19.0",
+      "huggingface_hub": "2.2.0",
+      "accelerate": "1.15.0",
+      "bitsandbytes": "0.50.2",
+      "safetensors": "0.8.0",
+      "pillow": "11.3.0",
+      "numpy": "1.26.4",
+      "Jinja2": "3.1.6",
+      "packaging": "24.0"
+    }
+  }
+}
